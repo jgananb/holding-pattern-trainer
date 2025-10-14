@@ -1,6 +1,8 @@
 # Holding Trainer
 
-A desktop application for practicing holding pattern entries. Built with Rust and egui for pilots training instrument procedures.
+A desktop application for practicing holding pattern entries, made for cadet pilots, pilots in-training, refreshment and enthusiasts. 
+
+Built with Rust and egui.
 
 <img width="1277" height="851" alt="4721f37412b2a04f3054e9b760518829" src="https://github.com/user-attachments/assets/c4c5c73f-5490-44a7-a6d8-96db0993b601" />
 
@@ -57,4 +59,5 @@ If you find this useful, consider supporting development:
 ## License
 
 MIT
+
 
