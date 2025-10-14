@@ -1,10 +1,5 @@
 -- Holding Pattern Practice Script for X-Plane 11
--- Solo lee datos de X-Plane y los escribe a JSON
--- La app Rust maneja toda la lógica
-
--- Función para escribir datos a archivo JSON
 function write_xplane_data()
-    -- Leer datos de X-Plane
     local vor_freq = get("sim/cockpit2/radios/actuators/nav1_frequency_hz") or 0
     local vor_id = get("sim/cockpit2/radios/indicators/nav1_nav_id") or ""
 
@@ -15,7 +10,6 @@ function write_xplane_data()
     local groundspeed_ms = get("sim/flightmodel/position/groundspeed") or 0
     local groundspeed = groundspeed_ms * 1.94384  -- Convertir m/s a nudos
 
-    -- Buscar VOR si hay uno sintonizado
     local vor_lat = 0
     local vor_lon = 0
 
@@ -30,7 +24,6 @@ function write_xplane_data()
         end
     end
 
-    -- Escribir JSON con datos básicos de X-Plane
     local file = io.open(SCRIPT_DIRECTORY .. "xplane_data.json", "w")
     if file then
         file:write("{\n")
@@ -48,8 +41,7 @@ function write_xplane_data()
     end
 end
 
--- Escribir datos cada segundo
 do_often("write_xplane_data()")
 
--- Mensaje de inicio
 logMsg("Holding Practice Data Writer loaded!")
+
