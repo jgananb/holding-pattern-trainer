@@ -1,0 +1,18 @@
+[package]
+name = "xplane_holding_viewer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.29"
+egui = "0.29"
+egui_extras = { version = "0.29", features = ["image"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rand = "0.8"
+reqwest = { version = "0.12", features = ["blocking"] }
+image = "0.25"
+open = "5.0"
+
+[build-dependencies]
+winres = "0.1"
