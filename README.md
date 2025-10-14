@@ -2,6 +2,8 @@
 
 A desktop application for practicing holding pattern entries. Built with Rust and egui for pilots training instrument procedures.
 
+<img width="1277" height="851" alt="4721f37412b2a04f3054e9b760518829" src="https://github.com/user-attachments/assets/c4c5c73f-5490-44a7-a6d8-96db0993b601" />
+
 ## Features
 
 - **Simulate Mode**: Practice with any VOR worldwide without a flight simulator
@@ -30,6 +32,9 @@ A desktop application for practicing holding pattern entries. Built with Rust an
 3. Click "New Holding" to generate a random holding pattern
 4. Fly to the fix and the app will track your entry
 
+## Showcase
+https://github.com/user-attachments/assets/ee9af032-8004-4693-a65a-8e4c783259bb
+
 ## Tech Stack
 
 - Rust
@@ -52,3 +57,4 @@ If you find this useful, consider supporting development:
 ## License
 
 MIT
+
